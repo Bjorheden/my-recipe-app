@@ -8,7 +8,7 @@ const RecipeList = ({ recipes }) => {
     <div className="recipe-list">
       {recipes.map((recipe) => (
         <RecipeCard
-          key={recipe.id}
+          id={recipe.id}
           title={recipe.title}
           image={recipe.image}
           description={recipe.description}

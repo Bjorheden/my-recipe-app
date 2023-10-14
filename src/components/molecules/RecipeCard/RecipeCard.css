@@ -1,41 +1,54 @@
+/* Add this CSS in your RecipeCard.css or style the component directly */
+
 .recipe-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 16px;
-    margin: 16px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    transition: transform 0.3s ease;
-  }
-  
-  .recipe-card:hover {
-    transform: scale(1.03);
-    cursor: pointer;
-  }
-  
-  .recipe-card img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-  
-  .recipe-title {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    color: #333;
-  }
-  
-  .recipe-description {
-    font-size: 1rem;
-    margin: 10px 0;
-    color: #666;
-  }
-  
-  .recipe-food-type {
-    font-size: 0.9rem;
-    margin: 10px 0;
-    color: #999;
-  }
-  
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  height: 200px; /* Set a fixed height for all recipe cards */
+  width: 300px; /* Set a fixed height for all recipe cards */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.recipe-card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.recipe-card img {
+  width: 100%;
+  max-height: 200px; /* Adjust as needed */
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.recipe-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+  overflow: hidden; /* Hide overflowing text */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-overflow: ellipsis; /* Display an ellipsis (...) for long titles */
+}
+
+.recipe-description {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #666;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.recipe-food-type {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  color: #999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
