@@ -10,7 +10,6 @@ const RecipeCard = ({ title, image, description, foodType, id, recipe }) => {
             className="recipe-card-link"
         >
             <div className="recipe-card">
-                <p className="id">{id}</p>
                 <img src={image} alt={title} />
                 <h3 className="recipe-title">{title}</h3>
                 <p className="recipe-description">{description}</p>
