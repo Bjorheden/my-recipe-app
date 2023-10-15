@@ -3,4 +3,11 @@
 .homepage {
     text-align: center;
 }
-  
+
+.featured-recipes {
+    display: flex;
+    flex-direction: row; /* Set to "row" for recipes in rows */
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}

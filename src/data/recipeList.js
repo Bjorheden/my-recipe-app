@@ -1,4 +1,4 @@
-const recipeList = [
+/* const recipeList = [
     {
       id: 1,
       title: 'Delicious Pasta',
@@ -107,5 +107,5 @@ const recipeList = [
     // Add more recipe objects as needed
   ];
   
-  export default recipeList;
+  export default recipeList; */
   

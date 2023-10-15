@@ -1,30 +1,35 @@
-import React from 'react';
-import { useParams } from 'react-router-dom'; // Import useParams
-import recipeList from '../../../data/recipeList'; // Import the recipeList data
-import './RecipeDetailPage.css'; // Add your CSS import
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const RecipeDetailPage = () => {
-  // Use the useParams hook to get the "id" from the URL parameter
   const { id } = useParams();
-  
-  // Convert the "id" to a number
-  const recipeId = Number(id);
+  const [recipe, setRecipe] = useState(null);
 
-  // Find the recipe with the matching ID
-  const selectedRecipe = recipeList.find((recipe) => recipe.id === recipeId);
-
-  // Check if the recipe exists
-  if (!selectedRecipe) {
-    return <div>Recipe not found.</div>;
-  }
+  useEffect(() => {
+    // Fetch the specific recipe based on the "id" from the route
+    fetch(`http://localhost:5000/api/recipes/${id}`)
+      .then((response) => response.json())
+      .then((data) => setRecipe(data))
+      .catch((error) => {
+        console.error('Error fetching recipe data:', error);
+        setRecipe(null);
+      });
+  }, [id]);
 
   return (
     <div className="recipe-detail">
-      <h1>{selectedRecipe.title}</h1>
-      <img src={selectedRecipe.image} alt={selectedRecipe.title} />
-      <p>{selectedRecipe.description}</p>
-      <p>Food Type: {selectedRecipe.foodType}</p>
-      {/* Add more details as needed */}
+      {recipe ? (
+        <>
+          <h1>{recipe.title}</h1>
+          <img src={recipe.image} alt={recipe.title} />
+          <p>{recipe.description}</p>
+          <p>Food Type: {recipe.foodType}</p>
+          {/* Add more details as needed */}
+        </>
+      ) : (
+        <div>Recipe not found.</div>
+      )}
     </div>
   );
 };
