@@ -1,13 +1,22 @@
-/* Add this CSS in your HomePage.css or style the component directly */
-
 .homepage {
     text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 20px;
 }
 
 .featured-recipes {
     display: flex;
-    flex-direction: row; /* Set to "row" for recipes in rows */
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    background-color: #d2d6b0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

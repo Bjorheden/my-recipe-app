@@ -1,0 +1,25 @@
+/* Add this CSS in your RecipeDetailPage.css or style the component directly */
+
+/* Center text horizontally and vertically within list items */
+.recipe-detail ul {
+    padding: 0;
+}
+
+.recipe-detail ul li {
+    display: flex;
+    justify-content: center; /* Center both bullet and text horizontally */
+    align-items: center; /* Center both bullet and text vertically */
+}
+
+/* Prevent text from overflowing */
+.recipe-detail ul li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Style the bullet */
+.recipe-detail ul li::before {
+    content: "\2022"; /* Unicode character for a bullet (•) */
+    margin-right: 0.5rem; /* Adjust as needed */
+}
