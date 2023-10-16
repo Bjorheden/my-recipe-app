@@ -8,12 +8,6 @@ body {
     background-color: #898e63;
 }
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    font-family: "Brush Script MT", cursive;
-}
-
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;

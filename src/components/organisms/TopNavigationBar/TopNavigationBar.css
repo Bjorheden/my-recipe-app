@@ -1,0 +1,36 @@
+/* This is a basic example of CSS for the TopNavigationBar */
+
+.top-navigation-bar {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px; /* Adjust padding as needed */
+    background-color: #333; /* Background color for the top navigation bar */
+    color: #fff; /* Text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.page-title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1.5rem; /* Adjust the title font size */
+    font-weight: bold;
+    font-family: "Brush Script MT", cursive;
+}
+
+.spacer {
+    flex: 1; /* This creates a flexible space, pushing the button to the right */
+}
+
+.custom-menu-icon {
+    background-color: #333; /* Background color matching top-navigation-bar */
+    color: #fff; /* Text color (white) */
+    cursor: pointer;
+}
+
+.menu-icon {
+    background-color: #333;
+    border: none;
+}
