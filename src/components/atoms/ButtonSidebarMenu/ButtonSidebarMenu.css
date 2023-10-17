@@ -1,0 +1,21 @@
+.sidebar-menu-button {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Set width to match the sidebar menu */
+    background-color: #333; /* Same color as the sidebar menu */
+    color: #fff; /* Text color */
+    padding: 5px; /* Add padding for spacing */
+    transition: background-color 0.3s; /* Hover effect for background color */
+    border: none;
+    font-size: 17px;
+}
+
+.sidebar-menu-button:hover {
+    background-color: #444; /* Change background color on hover */
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 5px; /* Add margin to separate the icon and text */
+    margin-top: 5px;
+}

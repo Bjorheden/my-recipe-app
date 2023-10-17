@@ -21,17 +21,19 @@ const RecipeDetailPage = () => {
         <div className="recipe-detail">
             {recipe ? (
                 <>
-                    <h1>{recipe.title}</h1>
-                    <img src={recipe.image} alt={recipe.title} />
-                    <p>{recipe.description}</p>
-                    <p>Food Type: {recipe.foodType}</p>
-                    <h2>Ingredients:</h2>
-                    <ul>
-                        {recipe.ingredients.map((ingredient, index) => (
-                            <li key={index}>{ingredient}</li>
-                        ))}
-                    </ul>
-                    {/* Add more details as needed */}
+                    <div className="centered-content">
+                        <h1>{recipe.title}</h1>
+                        <img src={recipe.image} alt={recipe.title} />
+                        <p>{recipe.description}</p>
+                        <p>Food Type: {recipe.foodType}</p>
+                        <h2>Ingredients:</h2>
+                        <ul>
+                            {recipe.ingredients.map((ingredient, index) => (
+                                <li key={index}>{ingredient}</li>
+                            ))}
+                        </ul>
+                        {/* Add more details as needed */}
+                    </div>
                 </>
             ) : (
                 <div>Recipe not found.</div>

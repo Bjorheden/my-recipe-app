@@ -1,9 +1,0 @@
-/* Define styles for the Add Recipe button */
-.add-recipe-button {
-    background-color: #2b5d2f; /* Button background color */
-    color: #fff; /* Button text color */
-    padding: 10px 20px; /* Button padding */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
