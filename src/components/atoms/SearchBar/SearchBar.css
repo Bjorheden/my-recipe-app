@@ -1,4 +1,31 @@
-.search-input {
-    width: 500px;
-    margin-bottom: 40px; /* Add margins as needed */
+/* SearchBar.css */
+.search-bar-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    background: #898e63;
+    border-radius: 4px;
+    padding: 3px;
+
+    width: 400px;
+    margin: 0 auto; /* Center the container horizontally */
+    margin-bottom: 30px;
 }
+
+.search-bar-container:hover {
+    background: #d2d6b0; /* Change the background color on hover */
+}
+
+.search-bar-container:focus {
+    background: #d2d6b0; /* Change the background color on hover */
+}
+
+.search-input {
+    outline: none;
+    background: #898e63;
+    box-shadow: none;
+}
+
+.search-input:focus {
+    background: #d2d6b0;
+}
+

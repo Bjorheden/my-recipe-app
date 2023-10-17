@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/pages/HomePage/HomePage.jsx';
-import RecipeDetailPage from './components/pages/RecipeDetailPage/RecipeDetailPage';
+import RecipeDetailPage from './components/pages/RecipeDetailPage/RecipeDetailPage.jsx';
+import AddRecipePage from './components/pages/AddRecipePage/AddRecipePage.jsx';
 import SidebarMenu from './components/organisms/SidebarMenu/SidebarMenu.jsx';
 import TopNavigationBar from './components/organisms/TopNavigationBar/TopNavigationBar.jsx';
 
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/recipe/:id" element={<RecipeDetailPage />} />
+          <Route path="/add-recipe" element={<AddRecipePage />} />
         </Routes>
       </div>
     </Router>

@@ -36,6 +36,11 @@ const SidebarMenu = ({ isOpen, closeMenu }) => {
         closeMenu(); // Close the menu
     };
 
+    const navigateToAddRecipe = () => {
+        navigate("/add-recipe"); // Redirect to the AddRecipePage
+        closeMenu(); // Close the menu
+    };
+
     return (
         <div className={`side-menu ${isOpen ? "open" : ""}`} ref={menuRef}>
             <div className="button-container">
@@ -46,7 +51,7 @@ const SidebarMenu = ({ isOpen, closeMenu }) => {
                 ></ButtonSidebarMenu>
                 <ButtonSidebarMenu
                     icon={<AddIcon />}
-                    onClick={closeMenu}
+                    onClick={navigateToAddRecipe} // Call the function to navigate and close
                     text="Add recipe"
                 ></ButtonSidebarMenu>
                 <ButtonSidebarMenu
