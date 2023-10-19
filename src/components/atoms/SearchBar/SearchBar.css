@@ -1,31 +1,62 @@
 /* SearchBar.css */
 .search-bar-container {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    background: #898e63;
-    border-radius: 4px;
-    padding: 3px;
-
+    justify-content: center;
     width: 400px;
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 0 auto;
     margin-bottom: 30px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background: #898e63;
 }
 
 .search-bar-container:hover {
-    background: #d2d6b0; /* Change the background color on hover */
-}
-
-.search-bar-container:focus {
-    background: #d2d6b0; /* Change the background color on hover */
-}
-
-.search-input {
-    outline: none;
-    background: #898e63;
-    box-shadow: none;
-}
-
-.search-input:focus {
     background: #d2d6b0;
 }
 
+.search-bar-container:focus {
+    outline: none;
+    background: #d2d6b0;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.search-bar-container input {
+    background: #898e63;
+    border: none;
+
+    padding: 5px;
+    width: 100%;
+    color: #333;
+}
+
+.search-bar-container input:hover {
+    background: #d2d6b0;
+    color: #333;
+}
+
+.search-bar-container input:focus {
+    background: #d2d6b0;
+    outline: none;
+    color: #333;
+}
+
+.search-bar-container input::placeholder {
+    color: #333 !important;; /* Placeholder text color */
+    
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    background: #d2d6b0;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 4px 0 0 4px; /* Top-left, top-right, bottom-right, bottom-left */
+}
+
+.search-icon svg {
+    width: 24px; /* Adjust the icon size as needed */
+    height: 24px; /* Adjust the icon size as needed */
+    fill: #333; /* Icon color */
+}

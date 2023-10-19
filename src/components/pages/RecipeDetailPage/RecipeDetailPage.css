@@ -15,12 +15,6 @@
     text-overflow: ellipsis;
 }
 
-/* Style the bullet */
-.recipe-detail ul li::before {
-    content: "\2022"; /* Unicode character for a bullet (•) */
-    margin-right: 0.5rem; /* Adjust as needed */
-}
-
 .centered-content {
     display: flex;
     flex-direction: column;
@@ -29,3 +23,4 @@
     text-align: center; /* Center text within the div */
     /* Add more styling as needed */
 }
+

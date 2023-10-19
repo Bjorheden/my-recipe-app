@@ -27,9 +27,14 @@ const RecipeDetailPage = () => {
                         <p>{recipe.description}</p>
                         <p>Food Type: {recipe.foodType}</p>
                         <h2>Ingredients:</h2>
-                        <ul>
+                        <ul className="bullet-list">
                             {recipe.ingredients.map((ingredient, index) => (
-                                <li key={index}>{ingredient}</li>
+                                <li key={index}>{`• ${ingredient}`}</li>
+                            ))}
+                        </ul>
+                        <ul>
+                            {recipe.instructions.map((instruction, index) => (
+                                <li key={index}>{`${index + 1}. ${instruction}`}</li>
                             ))}
                         </ul>
                         {/* Add more details as needed */}
