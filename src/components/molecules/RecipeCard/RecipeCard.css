@@ -5,7 +5,8 @@
     margin: 16px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-    background-color: #fff;
+    background-color: #333;
+    color: #fff;
     transition: transform 0.3s ease;
     height: 170px;
     width: 300px;
@@ -22,6 +23,14 @@
     max-height: 200px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+.recipe-card p {
+    color: #fff;
+}
+
+.recipe-card h3 {
+    color: #fff;
 }
 
 .recipe-title {
