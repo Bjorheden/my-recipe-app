@@ -7,6 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-image: url("../src/images/golden-cutlery-with-textile-plate-dark-background-top-view.jpg");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 code {
