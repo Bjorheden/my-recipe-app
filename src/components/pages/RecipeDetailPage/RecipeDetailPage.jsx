@@ -32,6 +32,7 @@ const RecipeDetailPage = () => {
                                 <li key={index}>{`• ${ingredient}`}</li>
                             ))}
                         </ul>
+                        <h2>Instructions:</h2>
                         <ul>
                             {recipe.instructions.map((instruction, index) => (
                                 <li key={index}>{`${index + 1}. ${instruction}`}</li>

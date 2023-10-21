@@ -1,6 +1,6 @@
 // AddRecipePage.js
 import React from "react";
-import AddRecipeForm from "../../molecules/AddRecipeForm/AddRecipeForm";
+import AddRecipeForm from "../../organisms/AddRecipeForm/AddRecipeForm";
 import './AddRecipePage.css'
 
 const AddRecipePage = ({ onAddRecipe }) => {

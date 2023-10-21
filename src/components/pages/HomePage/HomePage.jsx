@@ -28,12 +28,12 @@ const HomePage = () => {
                     {recipes.map((recipe) => (
                         // Render RecipeCard components with recipe data
                         <RecipeCard
-                            key={recipe.id}
+                            key={recipe._id}
                             title={recipe.title}
                             image={recipe.image}
                             description={recipe.description}
                             foodType={recipe.foodType}
-                            id={recipe.id}
+                            id={recipe._id}
                         />
                     ))}
                 </div>

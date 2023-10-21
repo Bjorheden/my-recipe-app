@@ -27,10 +27,22 @@
 
 .recipe-card p {
     color: #fff;
+    text-decoration: none;
+}
+
+.recipe-card p:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.recipe-card a:visited {
+    color: #fff;
+    text-decoration: none;
 }
 
 .recipe-card h3 {
     color: #fff;
+    text-decoration: none;
 }
 
 .recipe-title {
@@ -45,10 +57,11 @@
 .recipe-description {
     font-size: 1rem;
     margin: 10px 0;
-    color: #666;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    text-decoration: none;
+    
 }
 
 .recipe-food-type {
@@ -58,4 +71,5 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    text-decoration: none;
 }

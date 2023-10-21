@@ -8,9 +8,10 @@ const RecipeCard = ({ title, image, description, foodType, id, recipe }) => {
         <Link
             to={{ pathname: `/recipe/${id}`, state: { recipe } }}
             className="recipe-card-link"
+            style={{textDecoration: 'none'}}
         >
             <div className="recipe-card">
-                <img src={image} alt={title} />
+                <img src={image} alt="" />
                 <h3 className="recipe-title">{title}</h3>
                 <p className="recipe-description">{description}</p>
                 <p className="recipe-food-type">{foodType}</p>
