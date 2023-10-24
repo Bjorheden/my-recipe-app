@@ -1,5 +1,12 @@
-label {
-    display: block;
+.input-field {
+    display: flex;
+    flex-direction: column;
     margin: 20px 0;
-    color: #666; /* Slightly muted text color */
+    color: white;
+}
+
+.input-field-text {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 20px 5px 10px;
 }

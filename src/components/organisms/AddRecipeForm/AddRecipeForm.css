@@ -17,13 +17,6 @@
     color: #333; /* Dark text color */
 }
 
-textarea,
-input[type="text"] {
-    width: 87%;
-    padding: 10px;
-    border-radius: 4px;
-}
-
 .add-recipe-button {
     background-color: #333;
     color: white;

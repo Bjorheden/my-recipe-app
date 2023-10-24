@@ -1,0 +1,9 @@
+.toggle-sidebar-button {
+    background: none;
+    color: white;
+    font-size: x-large;
+    border: none;
+    z-index: 9999;
+    margin-top: 5px;
+    cursor: pointer;
+}

@@ -14,7 +14,7 @@ const FieldList = ({
 }) => {
     return (
         <div className="field-list">
-            {fieldLabel}:
+            {fieldLabel}
             {fieldType === "input"
                 ? items.map((item, index) => (
                       <div key={index} className="list-item">
@@ -26,6 +26,7 @@ const FieldList = ({
                               placeholder={placeholder}
                           />
                           <ButtonHandleInput
+                              className="remove-button"
                               onClick={() => onRemove(index)}
                               action="remove"
                               text="X"
@@ -42,17 +43,26 @@ const FieldList = ({
                               placeholder={placeholder}
                           />
                           <ButtonHandleInput
+                              className="remove-button"
                               onClick={() => onRemove(index)}
                               action="remove"
                               text="X"
                           />
                       </div>
                   ))}
-            <ButtonHandleInput
-                onClick={onAdd}
-                action="add"
-                text="Add ingredient"
-            />
+            {fieldLabel === "Instructions:" ? (
+                <ButtonHandleInput
+                    onClick={onAdd}
+                    action="add"
+                    text="Add instructions"
+                />
+            ) : (
+                <ButtonHandleInput
+                    onClick={onAdd}
+                    action="add"
+                    text="Add ingredients"
+                />
+            )}
         </div>
     );
 };

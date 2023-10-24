@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import "./TopNavigationBar.css";
 import SidebarMenu from "../SidebarMenu/SidebarMenu";
-import MenuIcon from "@mui/icons-material/Menu"; // Import the Menu icon
+import ButtonToggleSidebarMenu from "../../atoms/ButtonToggleSidebarMenu/ButtonToggleSidebarMenu";
 
 const TopNavigationBar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
-
-    const openMenu = () => {
-        setMenuOpen(true);
-    };
 
     const closeMenu = () => {
         setMenuOpen(false);
@@ -16,9 +12,11 @@ const TopNavigationBar = () => {
 
     return (
         <div className="top-navigation-bar">
-            <button className="menu-icon" onClick={openMenu}>
-                <MenuIcon className="custom-menu-icon" />
-            </button>
+            
+            <ButtonToggleSidebarMenu
+                isMenuOpen={isMenuOpen}
+                setMenuOpen={setMenuOpen}
+            />
             <h1 className="page-title">My Recipe App</h1>
             <SidebarMenu isOpen={isMenuOpen} closeMenu={closeMenu} />
         </div>

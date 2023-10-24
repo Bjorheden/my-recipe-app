@@ -4,9 +4,9 @@ import './TextAreaField.css'
 
 const TextAreaField = ({ label, name, value, onChange }) => {
     return (
-        <label>
+        <label className="text-area-field">
             {label}
-            <textarea className='text-area-field' name={name} value={value} onChange={onChange}></textarea>
+            <textarea className='text-area-field-text' name={name} value={value} onChange={onChange}></textarea>
         </label>
     );
 };

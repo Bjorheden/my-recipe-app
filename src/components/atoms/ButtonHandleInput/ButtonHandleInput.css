@@ -1,6 +1,6 @@
 .add-input-button {
     margin-bottom: 20px;
-    width: 97%;
+    width: 100%;
 }
 
 .add-input-button:hover {
@@ -10,9 +10,17 @@
 .remove-input-button {
     width: 20px;
     border: none;
-    border-radius: 3px;
-    margin-left: 1px;
-    margin-top: 1px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    border: 0;
+    background: none;
+    color: black;
+    outline: none;
+    margin: 0;
+    padding: 0px;
+    border-radius: 100px;
+    z-index: 2;
 }
 
 .remove-input-button:hover {

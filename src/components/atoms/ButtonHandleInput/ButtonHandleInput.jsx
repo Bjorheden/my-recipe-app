@@ -1,7 +1,7 @@
 import React from "react";
 import "./ButtonHandleInput.css"; // Import your CSS for the buttons
 
-const ButtonHandleInput = ({ onClick, text, action }) => {
+const ButtonHandleInput = ({ onClick, action, text }) => {
     // Define the CSS class based on the 'type' prop
     const buttonClass = action === "add" ? "add-input-button" : "remove-input-button";
 
@@ -11,7 +11,7 @@ const ButtonHandleInput = ({ onClick, text, action }) => {
             onClick={onClick}
             type="button"
         >
-            {text}
+            {action === "add" ? `+ ${text}` : text}
         </button>
     );
 };

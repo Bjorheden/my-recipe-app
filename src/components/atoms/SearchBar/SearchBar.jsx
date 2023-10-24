@@ -13,11 +13,12 @@ const StyledSearchBar = styled(TextField)({
         color: "white", // Change the color here
     },
     "& label.MuiInputLabel-root.Mui-focused": {
-        color: "green", // Change the color here
+        color: "white", // Change the color here
     },
     "& .MuiOutlinedInput-root": {
         "&.Mui-focused fieldset": {
-            borderColor: "green",
+            borderColor: "#8F6518",
+            color: "white"
         },
         "&.MuiOutlinedInput-notchedOutline": {
             borderWidth: "px", // Adjust the thickness as needed
@@ -28,9 +29,12 @@ const StyledSearchBar = styled(TextField)({
         "& .MuiSvgIcon-root": {
             color: "white", // Change the color here
         },
+        "&:hover fieldset": {
+            borderColor: "#8F6518", // Change the border color on hover
+        },
     },
     "& .MuiInputLabel-outlined": {
-        transform: "translate(10px, -30px) scale(0.85)",
+        transform: "translate(10px, -10px) scale(0.85)",
     },
 });
 
@@ -53,6 +57,9 @@ const SearchBar = ({ onSearch }) => {
                             <SearchIcon />
                         </InputAdornment>
                     ),
+                    style: {
+                        color: 'white', // Change the text color to white
+                    },
                 }}
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
