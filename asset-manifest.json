@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/%7Bmy-recipe-app-frontend%7D/static/css/main.f1cb5a77.css",
+    "main.js": "/%7Bmy-recipe-app-frontend%7D/static/js/main.560c4a42.js",
+    "static/js/787.dbdd9690.chunk.js": "/%7Bmy-recipe-app-frontend%7D/static/js/787.dbdd9690.chunk.js",
+    "static/media/golden-cutlery-with-textile-plate-dark-background-top-view.jpg": "/%7Bmy-recipe-app-frontend%7D/static/media/golden-cutlery-with-textile-plate-dark-background-top-view.60be9b8a69cc7dd328d1.jpg",
+    "index.html": "/%7Bmy-recipe-app-frontend%7D/index.html",
+    "main.f1cb5a77.css.map": "/%7Bmy-recipe-app-frontend%7D/static/css/main.f1cb5a77.css.map",
+    "main.560c4a42.js.map": "/%7Bmy-recipe-app-frontend%7D/static/js/main.560c4a42.js.map",
+    "787.dbdd9690.chunk.js.map": "/%7Bmy-recipe-app-frontend%7D/static/js/787.dbdd9690.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1cb5a77.css",
+    "static/js/main.560c4a42.js"
+  ]
+}
