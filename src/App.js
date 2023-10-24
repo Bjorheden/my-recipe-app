@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import { HashRouter as Router } from "react-router-dom";
 import HomePage from './components/pages/HomePage/HomePage.jsx';
 import RecipeDetailPage from './components/pages/RecipeDetailPage/RecipeDetailPage.jsx';
 import AddRecipePage from './components/pages/AddRecipePage/AddRecipePage.jsx';
