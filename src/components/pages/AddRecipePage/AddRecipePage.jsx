@@ -1,9 +1,12 @@
 // AddRecipePage.js
-import React from "react";
+import React, {useState} from "react";
 import AddRecipeForm from "../../organisms/AddRecipeForm/AddRecipeForm";
+import ModalAddRecipeSuccess from "../../molecules/ModalAddRecipeSuccess/ModalAddRecipeSuccess";
 import "./AddRecipePage.css";
 
 const AddRecipePage = ({ onAddRecipe }) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     const handleAddRecipe = (recipeData) => {
         fetch("http://localhost:5000/api/recipes", {
             method: "POST",
@@ -14,7 +17,8 @@ const AddRecipePage = ({ onAddRecipe }) => {
         })
             .then((response) => response.json())
             .then((data) => {
-                console.log("Recipe added successfully:", data);
+
+                setIsModalOpen(true);
                 // Optionally, you can add code to navigate to a different page or show a success message to the user.
             })
             .catch((error) => {
@@ -23,9 +27,19 @@ const AddRecipePage = ({ onAddRecipe }) => {
             });
     };
 
+    const openModal = () => {
+        setIsModalOpen(true)
+    }
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
     return (
         <div className="add-recipe-container">
             <AddRecipeForm onAddRecipe={handleAddRecipe} />
+            <ModalAddRecipeSuccess isOpen={isModalOpen} onRequestClose={closeModal} />
+            <button onClick={openModal}>Test</button>
         </div>
     );
 };
