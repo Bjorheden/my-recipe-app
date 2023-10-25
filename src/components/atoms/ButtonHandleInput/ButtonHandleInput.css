@@ -1,5 +1,5 @@
 .add-input-button {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 100%;
 }
 
@@ -25,4 +25,8 @@
 
 .remove-input-button:hover {
     cursor: pointer;
+}
+
+.remove-input-button svg {
+    fill: white; /* Set the fill color to white */
 }

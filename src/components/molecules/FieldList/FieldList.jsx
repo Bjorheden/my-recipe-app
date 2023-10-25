@@ -1,6 +1,7 @@
-// FieldList.js
 import React from "react";
 import ButtonHandleInput from "../../atoms/ButtonHandleInput/ButtonHandleInput";
+import InputField from "../../atoms/InputField/InputField"; // Import the InputField component
+import TextAreaField from "../../atoms/TextAreaField/TextAreaField"; // Import the TextAreaField component
 import "./FieldList.css";
 
 const FieldList = ({
@@ -8,22 +9,21 @@ const FieldList = ({
     onAdd,
     onRemove,
     onChange,
-    placeholder,
     fieldLabel,
     fieldType,
 }) => {
     return (
         <div className="field-list">
-            {fieldLabel}
             {fieldType === "input"
                 ? items.map((item, index) => (
                       <div key={index} className="list-item">
-                          <input
-                              className="field-list-item"
+                          <InputField // Use the InputField component
+                              label="Ingredient:"
                               type="text"
+                              name={`item-${index}`}
                               value={item}
                               onChange={(e) => onChange(e, index)}
-                              placeholder={placeholder}
+                              required={false}
                           />
                           <ButtonHandleInput
                               className="remove-button"
@@ -35,12 +35,11 @@ const FieldList = ({
                   ))
                 : items.map((item, index) => (
                       <div key={index} className="list-item">
-                          <textarea
-                              className="field-list-item"
-                              type="text"
+                          <TextAreaField // Use the TextAreaField component
+                              label="Instruction:"
+                              name={`item-${index}`}
                               value={item}
                               onChange={(e) => onChange(e, index)}
-                              placeholder={placeholder}
                           />
                           <ButtonHandleInput
                               className="remove-button"
@@ -54,13 +53,13 @@ const FieldList = ({
                 <ButtonHandleInput
                     onClick={onAdd}
                     action="add"
-                    text="Add instructions"
+                    text="Add instruction"
                 />
             ) : (
                 <ButtonHandleInput
                     onClick={onAdd}
                     action="add"
-                    text="Add ingredients"
+                    text="Add ingredient"
                 />
             )}
         </div>
