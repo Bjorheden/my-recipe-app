@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my-recipe-app-frontend/static/css/main.8e231578.css",
-    "main.js": "/my-recipe-app-frontend/static/js/main.dad39ea7.js",
+    "main.css": "/my-recipe-app-frontend/static/css/main.d25a9388.css",
+    "main.js": "/my-recipe-app-frontend/static/js/main.c306c519.js",
     "static/js/787.dbdd9690.chunk.js": "/my-recipe-app-frontend/static/js/787.dbdd9690.chunk.js",
     "static/media/golden-cutlery-with-textile-plate-dark-background-top-view.jpg": "/my-recipe-app-frontend/static/media/golden-cutlery-with-textile-plate-dark-background-top-view.60be9b8a69cc7dd328d1.jpg",
     "index.html": "/my-recipe-app-frontend/index.html",
-    "main.8e231578.css.map": "/my-recipe-app-frontend/static/css/main.8e231578.css.map",
-    "main.dad39ea7.js.map": "/my-recipe-app-frontend/static/js/main.dad39ea7.js.map",
+    "main.d25a9388.css.map": "/my-recipe-app-frontend/static/css/main.d25a9388.css.map",
+    "main.c306c519.js.map": "/my-recipe-app-frontend/static/js/main.c306c519.js.map",
     "787.dbdd9690.chunk.js.map": "/my-recipe-app-frontend/static/js/787.dbdd9690.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e231578.css",
-    "static/js/main.dad39ea7.js"
+    "static/css/main.d25a9388.css",
+    "static/js/main.c306c519.js"
   ]
 }
