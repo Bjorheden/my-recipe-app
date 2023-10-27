@@ -1,22 +1,11 @@
 .field-list {
     margin-bottom: 5px;
     width: 100%;
-    margin: 0 auto;
     color: white;
 }
 
 .list-item {
     position: relative;
     width: 100%;
-}
-
-.field-list-item {
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px 20px 10px 10px;
-    line-height: 1;
-    box-sizing: border-box;
-    outline: none;
-    margin-bottom: 1px;
+    margin-bottom: 0px;
 }

@@ -70,6 +70,7 @@ const AddRecipeForm = ({ onAddRecipe }) => {
                 name="title"
                 value={recipeData.title}
                 onChange={(e) => handleChange(e, "title")}
+                margin="15px"
                 required
             />
             <InputField
@@ -78,12 +79,14 @@ const AddRecipeForm = ({ onAddRecipe }) => {
                 name="image"
                 value={recipeData.image}
                 onChange={(e) => handleChange(e, "image")}
+                margin="15px"
             />
             <TextAreaField
                 label="Description:"
                 name="description"
                 value={recipeData.description}
                 onChange={(e) => handleChange(e, "description")}
+                margin="15px"
             />
             <InputField
                 label="Food Type:"
@@ -91,6 +94,7 @@ const AddRecipeForm = ({ onAddRecipe }) => {
                 name="foodType"
                 value={recipeData.foodType}
                 onChange={(e) => handleChange(e, "foodType")}
+                margin="15px"
             />
             <FieldList
                 fieldLabel="Ingredients:"

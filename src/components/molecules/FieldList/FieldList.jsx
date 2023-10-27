@@ -24,6 +24,7 @@ const FieldList = ({
                               value={item}
                               onChange={(e) => onChange(e, index)}
                               required={false}
+                              margin="5px"
                           />
                           <ButtonHandleInput
                               className="remove-button"
@@ -36,10 +37,11 @@ const FieldList = ({
                 : items.map((item, index) => (
                       <div key={index} className="list-item">
                           <TextAreaField // Use the TextAreaField component
-                              label="Instruction:"
+                              label="Instructions:"
                               name={`item-${index}`}
                               value={item}
                               onChange={(e) => onChange(e, index)}
+                              margin="5px"
                           />
                           <ButtonHandleInput
                               className="remove-button"
@@ -53,7 +55,7 @@ const FieldList = ({
                 <ButtonHandleInput
                     onClick={onAdd}
                     action="add"
-                    text="Add instruction"
+                    text="Add instructions"
                 />
             ) : (
                 <ButtonHandleInput
